@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Método Reconexão Emocional – com Vanderlei Azevedo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Transforme silêncio em diálogo e frieza em conexão. Aula online com o psicoterapeuta Vanderlei Azevedo, especialista em Psicanálise Clínica e relacionamentos." />
+  <style>
+    /* RESET SIMPLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f7f3ef;
+      color: #2b2520;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* LAYOUT BÁSICO */
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+
+    .section {
+      margin-bottom: 56px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #251713;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: #6b5c55;
+      margin-bottom: 12px;
+    }
+
+    /* CORES E ELEMENTOS BASE */
+    :root {
+      --bg-main: #f7f3ef;
+      --bg-soft: #f0e4da;
+      --bg-dark: #2b2520;
+      --accent: #8a3b3b;      /* vinho queimado */
+      --accent-soft: #c78673; /* terracota suave */
+      --accent-deep: #215043; /* verde profundo */
+      --text-main: #2b2520;
+      --text-soft: #6b5c55;
+      --radius: 12px;
+      --shadow-soft: 0 18px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(139, 76, 65, 0.07);
+      color: #8b4c41;
+      margin-bottom: 10px;
+    }
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #8b4c41;
+    }
+
+    .button,
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.98rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      text-align: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .button {
+      background: linear-gradient(135deg, #8a3b3b, #c78673);
+      color: #fff;
+      box-shadow: 0 14px 25px rgba(138, 59, 59, 0.4);
+    }
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 30px rgba(138, 59, 59, 0.55);
+    }
+    .button-secondary {
+      background: transparent;
+      color: #8a3b3b;
+      border: 1px solid rgba(138, 59, 59, 0.25);
+    }
+    .button-secondary:hover {
+      background: rgba(138, 59, 59, 0.06);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(33, 80, 67, 0.06);
+      color: #215043;
+      font-size: 0.75rem;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+      padding: 28px 24px;
+      background: linear-gradient(135deg, #f9f4f0 0%, #f1e2d6 40%, #f7f3ef 100%);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+      margin-top: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(199, 134, 115, 0.22) 0, transparent 55%),
+        radial-gradient(circle at 90% 80%, rgba(33, 80, 67, 0.22) 0, transparent 50%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 2.6vw, 2.4rem);
+      line-height: 1.15;
+      margin-bottom: 12px;
+      color: #251713;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-highlight {
+      color: #8a3b3b;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 1.02rem;
+      color: #5b4d45;
+      margin-bottom: 18px;
+      max-width: 34rem;
+    }
+
+    .hero-list {
+      list-style: none;
+      margin: 14px 0 18px;
+    }
+    .hero-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #5a4a42;
+    }
+    .hero-list-bullet {
+      margin-top: 4px;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #8a3b3b;
+      flex-shrink: 0;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 6px;
+    }
+
+    .hero-guarantee-text {
+      font-size: 0.78rem;
+      color: #6b5c55;
+    }
+
+    .hero-right {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hero-video-card {
+      background: rgba(247, 243, 239, 0.9);
+      border-radius: 20px;
+      padding: 12px;
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .hero-video-thumb {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #2b2520, #382017);
+      min-height: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f7f3ef;
+      padding: 22px;
+    }
+
+    .hero-video-thumb-content {
+      max-width: 270px;
+    }
+
+    .hero-video-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .hero-video-text {
+      font-size: 0.86rem;
+      color: #dfcec0;
+    }
+
+    .hero-play {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      background: #f7f3ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8a3b3b;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    }
+    .hero-play-icon {
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-left: 14px solid #8a3b3b;
+      margin-left: 3px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: #6b5c55;
+    }
+
+    .hero-price-tag {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(247, 243, 239, 0.9);
+      border: 1px dashed rgba(138, 59, 59, 0.3);
+      font-size: 0.8rem;
+      color: #8a3b3b;
+    }
+    .hero-price-tag strong {
+      font-size: 1.2rem;
+    }
+
+    /* SEÇÃO DOR */
+    .pains {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 28px;
+    }
+
+    .pains-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .pains-list li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.96rem;
+      color: #4b3d36;
+    }
+
+    .pains-bullet {
+      margin-top: 4px;
+      width: 9px;
+      height: 9px;
+      border-radius: 3px;
+      background: #c78673;
+      flex-shrink: 0;
+    }
+
+    .pains-card {
+      background: #2b2520;
+      color: #f7f3ef;
+      border-radius: 18px;
+      padding: 20px 18px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    .pains-card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .pains-card-highlight {
+      color: #f0c9b2;
+      font-weight: 600;
+    }
+
+    .pains-quote {
+      font-size: 0.9rem;
+      color: #e4d2c2;
+      margin-top: 10px;
+    }
+
+    /* BLOCO MECANISMO / MÉTODO */
+    .mechanism {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .mechanism-highlight {
+      font-weight: 600;
+      color: #8a3b3b;
+    }
+
+    .mechanism-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .mechanism-list li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #4b3d36;
+    }
+
+    .mechanism-dot {
+      margin-top: 5px;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #215043;
+      flex-shrink: 0;
+    }
+
+    .method-card {
+      background: #f0e4da;
+      border-radius: 18px;
+      padding: 18px 16px 18px;
+      border: 1px solid rgba(139, 76, 65, 0.25);
+    }
+
+    .method-pill {
+      font-size: 0.78rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(139, 76, 65, 0.08);
+      color: #8b4c41;
+      margin-bottom: 6px;
+    }
+
+    .method-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #251713;
+    }
+
+    .method-steps {
+      margin-top: 10px;
+    }
+
+    .method-step {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: #4b3d36;
+    }
+    .method-step-number {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #215043;
+      color: #f7f3ef;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* SEÇÃO: QUANDO ELE NÃO CONSEGUE SENTIR EM VOZ ALTA */
+    .men-block {
+      background: #2b2520;
+      color: #f7f3ef;
+      border-radius: 24px;
+      padding: 24px 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 26px;
+      align-items: flex-start;
+    }
+
+    .men-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #e4d2c2;
+      margin-bottom: 4px;
+    }
+
+    .men-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .men-text {
+      font-size: 0.94rem;
+      color: #e4d2c2;
+      margin-bottom: 10px;
+    }
+
+    .men-list {
+      list-style: none;
+      margin-top: 6px;
+    }
+
+    .men-list li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .men-icon {
+      margin-top: 2px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #c78673;
+      flex-shrink: 0;
+    }
+
+    .men-card {
+      background: rgba(247, 243, 239, 0.04);
+      border-radius: 18px;
+      padding: 16px 14px;
+      border: 1px solid rgba(245, 220, 196, 0.22);
+      font-size: 0.88rem;
+      color: #f1dbca;
+    }
+
+    .men-card strong {
+      color: #f7f3ef;
+    }
+
+    /* BENEFÍCIOS */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .benefit-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 14px 14px 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(139, 76, 65, 0.1);
+    }
+
+    .benefit-label {
+      font-size: 0.78rem;
+      color: #8a3b3b;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 4px;
+    }
+
+    .benefit-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #251713;
+    }
+
+    .benefit-text {
+      font-size: 0.9rem;
+      color: #5b4d45;
+    }
+
+    /* SOBRE O ESPECIALISTA */
+    .about {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.8fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .about-photo {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #2b2520, #215043);
+      aspect-ratio: 3 / 4;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .about-photo-inner {
+      position: absolute;
+      inset: 0;
+      padding: 30px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #f7f3ef;
+    }
+
+    .about-photo-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      opacity: 0.8;
+    }
+
+    .about-photo-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .about-photo-tagline {
+      font-size: 0.86rem;
+      color: #e4d2c2;
+    }
+
+    .about-photo-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: rgba(247, 243, 239, 0.1);
+      border: 1px solid rgba(247, 243, 239, 0.45);
+      font-size: 0.76rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* O QUE VOCÊ VAI RECEBER */
+    .what-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 18px 16px 20px;
+      border: 1px solid rgba(139, 76, 65, 0.18);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+      margin-top: 12px;
+    }
+
+    .what-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #8a3b3b;
+      margin-bottom: 6px;
+    }
+
+    .what-list {
+      list-style: none;
+      margin-top: 4px;
+    }
+
+    .what-list li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+      color: #4b3d36;
+    }
+
+    .what-icon {
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: rgba(138, 59, 59, 0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8a3b3b;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    /* BÔNUS */
+    .bonus {
+      background: #2b2520;
+      color: #f7f3ef;
+      border-radius: 22px;
+      padding: 22px 20px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 22px;
+      align-items: center;
+    }
+
+    .bonus-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .bonus-subtitle {
+      font-size: 0.9rem;
+      color: #e4d2c2;
+      margin-bottom: 10px;
+    }
+
+    .bonus-pill {
+      display: inline-flex;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      background: rgba(247, 243, 239, 0.06);
+      border: 1px solid rgba(247, 243, 239, 0.35);
+      color: #f7f3ef;
+      margin-bottom: 6px;
+    }
+
+    .bonus-card {
+      background: rgba(247, 243, 239, 0.03);
+      border-radius: 16px;
+      padding: 14px 14px 16px;
+      border: 1px solid rgba(247, 243, 239, 0.18);
+      font-size: 0.88rem;
+      color: #f1dbca;
+    }
+
+    /* OFERTA / CHECKOUT */
+    .offer {
+      background: #fff;
+      border-radius: 24px;
+      padding: 24px 20px 22px;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.09);
+      border: 1px solid rgba(139, 76, 65, 0.2);
+    }
+
+    .offer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .offer-heading {
+      font-size: 1.34rem;
+      font-weight: 600;
+      color: #251713;
+      margin-bottom: 4px;
+    }
+
+    .offer-subheading {
+      font-size: 0.96rem;
+      color: #5b4d45;
+    }
+
+    .offer-price-box {
+      text-align: right;
+    }
+
+    .offer-old-price {
+      font-size: 0.82rem;
+      color: #b39a8a;
+      text-decoration: line-through;
+    }
+
+    .offer-price {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #8a3b3b;
+      line-height: 1;
+    }
+
+    .offer-price small {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .offer-note {
+      font-size: 0.78rem;
+      color: #6b5c55;
+      margin-top: 4px;
+    }
+
+    .offer-cta {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-start;
+    }
+
+    .offer-secure {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: #6b5c55;
+    }
+
+    .offer-secure-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #215043;
+    }
+
+    /* GARANTIA */
+    .guarantee {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 24px;
+      padding: 20px 18px;
+      border-radius: 18px;
+      background: #f0e4da;
+      margin-top: 20px;
+      border: 1px dashed rgba(139, 76, 65, 0.4);
+    }
+
+    .guarantee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(247, 243, 239, 0.7);
+      font-size: 0.8rem;
+      color: #8a3b3b;
+      margin-bottom: 6px;
+    }
+
+    .guarantee-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .guarantee-text {
+      font-size: 0.88rem;
+      color: #5b4d45;
+    }
+
+    /* FAQ */
+    .faq {
+      margin-top: 10px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(139, 76, 65, 0.16);
+      padding: 10px 0;
+    }
+
+    .faq-question {
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: #251713;
+      margin-bottom: 4px;
+    }
+
+    .faq-answer {
+      font-size: 0.88rem;
+      color: #5b4d45;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(139, 76, 65, 0.16);
+      font-size: 0.76rem;
+      color: #8d7a6c;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 880px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 22px 18px;
+      }
+      .pains,
+      .mechanism,
+      .men-block,
+      .bonus,
+      .about {
+        grid-template-columns: 1fr;
+      }
+      .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .offer-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .offer-price-box {
+        text-align: left;
+      }
+      .page {
+        padding: 18px 14px 40px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        border-radius: 18px;
+      }
+      .offer {
+        padding: 20px 16px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero section" id="topo">
+      <div class="hero-inner">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Aula online para relacionamentos e casamento
+        </div>
+
+        <h1 class="hero-title">
+          Transforme <span class="hero-highlight">brigas em diálogo</span> antes que o silêncio destrua o seu relacionamento.
+        </h1>
+
+        <p class="hero-subtitle">
+          Um encontro direto e acolhedor com o psicoterapeuta <strong>Vanderlei Azevedo</strong>, com formação em Psicanálise Clínica, para reconectar casais em que ainda existe amor, mas falta escuta, acolhimento e expressão emocional.
+        </p>
+
+        <ul class="hero-list">
+          <li>
+            <div class="hero-list-bullet"></div>
+            <span>Entenda por que tantos homens se calam, se fecham e não conseguem dizer o que sentem.</span>
+          </li>
+          <li>
+            <div class="hero-list-bullet"></div>
+            <span>Aprenda a sair do ciclo de críticas, silêncio e explosões, sem precisar se anular ou implorar atenção.</span>
+          </li>
+          <li>
+            <div class="hero-list-bullet"></div>
+            <span>Reconstrua o diálogo, a intimidade e a parceria mesmo depois de muitos conflitos.</span>
+          </li>
+        </ul>
+
+        <div class="hero-ctas">
+          <!-- TROCAR HREF PELO LINK DO CHECKOUT HOTMART -->
+          <a href="https://seu-link-de-checkout-hotmart.com" class="button">
+            Quero restaurar meu relacionamento
+          </a>
+          <button type="button" class="button-secondary" onclick="document.getElementById('oferta').scrollIntoView({behavior:'smooth'})">
+            Ver detalhes da aula
+          </button>
+        </div>
+
+        <p class="hero-guarantee-text">
+          Acesso imediato + garantia de 7 dias pela Hotmart.
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-video-card">
+          <div class="hero-video-thumb">
+            <!-- SUBSTITUIR POR SEU PLAYER DE VÍDEO / IFRAME -->
+            <!-- Exemplo: iframe do vídeo de vendas da Hotmart -->
+            <div class="hero-video-thumb-content">
+              <div class="pill">
+                VSL • 40 minutos de conteúdo
+              </div>
+              <h3 class="hero-video-title">
+                Assista à mensagem do especialista antes de tomar sua decisão.
+              </h3>
+              <p class="hero-video-text">
+                Entenda o método, as histórias reais de consultório e o que você vai aprender para transformar a forma como vocês se escutam.
+              </p>
+            </div>
+            <div class="hero-play">
+              <div class="hero-play-icon"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-price-tag">
+            <span>De</span>
+            <del>R$ 297,00</del>
+            <span>por</span>
+            <strong>R$ 27,00</strong>
+          </div>
+          <span>Pagamento seguro via Hotmart • Acesso em poucos cliques</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: DOR / IDENTIFICAÇÃO -->
+    <section class="section" id="dores">
+      <div class="pains">
+        <div>
+          <h2 class="section-title">Talvez você esteja vivendo algo assim…</h2>
+          <p class="section-subtitle">
+            A sensação de falar, falar, e continuar se sentindo sozinho(a) dentro da própria relação.
+          </p>
+
+          <ul class="pains-list">
+            <li>
+              <div class="pains-bullet"></div>
+              <span>Quase toda conversa séria acaba em discussão ou em silêncio pesado.</span>
+            </li>
+            <li>
+              <div class="pains-bullet"></div>
+              <span>Você tenta explicar o que sente, mas ele se fecha, muda de assunto ou simplesmente se afasta.</span>
+            </li>
+            <li>
+              <div class="pains-bullet"></div>
+              <span>O casamento foi perdendo leveza, carinho e parceria, e hoje parece mais convivência do que conexão.</span>
+            </li>
+            <li>
+              <div class="pains-bullet"></div>
+              <span>Você se pergunta se ainda vale a pena insistir, mesmo percebendo que ainda existe amor.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pains-card">
+          <h3 class="pains-card-title">Não é “frescura” sua. Não é exagero.</h3>
+          <p>
+            Muitos relacionamentos não terminam por falta de amor, mas por <span class="pains-card-highlight">bloqueios emocionais</span>, dificuldade de escuta e padrões de defesa que vão se repetindo.
+          </p>
+          <p class="pains-quote">
+            Quando um homem não aprendeu a reconhecer e nomear o que sente, o que chega até você costuma ser frieza, silêncio ou irritação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MECANISMO E MÉTODO -->
+    <section class="section" id="metodo">
+      <div class="mechanism">
+        <div>
+          <h2 class="section-title">O que está por trás do silêncio dele</h2>
+          <p class="section-subtitle">
+            Não é sobre “consertar” apenas um dos dois, e sim compreender o funcionamento emocional da relação.
+          </p>
+
+          <p>
+            Durante anos de consultório, ficou claro que o problema não está só nas brigas, mas em um <span class="mechanism-highlight">modo automático de defesa</span> que muitos homens aprenderam: engolir o que sentem, endurecer por dentro e se afastar quando a conversa fica difícil.
+          </p>
+
+          <ul class="mechanism-list">
+            <li>
+              <div class="mechanism-dot"></div>
+              <span>Homens que foram ensinados a não chorar, não demonstrar fragilidade e “dar conta sozinho”.</span>
+            </li>
+            <li>
+              <div class="mechanism-dot"></div>
+              <span>Casais presos no padrão crítica de um lado, fuga e silêncio do outro.</span>
+            </li>
+            <li>
+              <div class="mechanism-dot"></div>
+              <span>Discussões que reabrem sempre as mesmas feridas, sem chegar a uma escuta verdadeira.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <div class="method-pill">
+            Método Reconexão Emocional • com Vanderlei Azevedo
+          </div>
+          <h3 class="method-title">O que você aprende nesta aula</h3>
+          <p style="font-size:0.9rem; color:#5b4d45; margin-top:4px;">
+            Um passo a passo simples e profundo para transformar silêncio em diálogo e frieza em presença emocional.
+          </p>
+
+          <div class="method-steps">
+            <div class="method-step">
+              <div class="method-step-number">1</div>
+              <div>
+                <strong>Identificar os padrões que sabotam o vínculo.</strong><br />
+                Entenda o que está por trás das mesmas brigas, afastamentos e “paredes” emocionais que se repetem no casal.
+              </div>
+            </div>
+            <div class="method-step">
+              <div class="method-step-number">2</div>
+              <div>
+                <strong>Compreender o bloqueio emocional masculino.</strong><br />
+                Veja por que muitos homens não conseguem sustentar a conversa, pedir ajuda ou mostrar vulnerabilidade sem sentir vergonha ou ataque.
+              </div>
+            </div>
+            <div class="method-step">
+              <div class="method-step-number">3</div>
+              <div>
+                <strong>Construir uma comunicação que aproxima.</strong><br />
+                Caminhos práticos para falar sem humilhar, cobrar sem destruir e pedir escuta sem se anular.
+              </div>
+            </div>
+            <div class="method-step">
+              <div class="method-step-number">4</div>
+              <div>
+                <strong>Restaurar segurança e intimidade.</strong><br />
+                Como reconstruir carinho, respeito e parceria no dia a dia, e como perceber se ainda há base emocional para salvar o relacionamento.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO ESPECÍFICO: QUANDO ELE NÃO SABE SENTIR EM VOZ ALTA -->
+    <section class="section" id="homens">
+      <div class="men-block">
+        <div>
+          <div class="men-tag">CORAÇÃO DA AULA</div>
+          <h2 class="men-title">Quando ele não sabe sentir em voz alta</h2>
+          <p class="men-text">
+            Esta aula foi pensada para relações em que ainda existe amor, mas o parceiro parece emocionalmente travado, frio ou distante — não por maldade, mas por bloqueios que ele nunca conseguiu reconhecer.
+          </p>
+
+          <ul class="men-list">
+            <li>
+              <div class="men-icon"></div>
+              <span>Homens que cresceram ouvindo que sentir é fraqueza, e hoje transformam dor em silêncio seco.</span>
+            </li>
+            <li>
+              <div class="men-icon"></div>
+              <span>Parceiros que se calam, trocam de assunto ou somem emocionalmente sempre que a conversa aprofunda.</span>
+            </li>
+            <li>
+              <div class="men-icon"></div>
+              <span>Casais presos na dança crítica–fuga, onde um se sente cobrado demais e o outro invisível.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="men-card">
+          <p>
+            Nesta aula, você vai perceber que o que muitas vezes parece <strong>desamor</strong> pode ser, na verdade, um conjunto de bloqueios emocionais e defesas psíquicas que podem ser trabalhados com mais consciência, cuidado e limites claros.
+          </p>
+          <p style="margin-top:10px;">
+            A proposta não é “mudar alguém à força”, mas oferecer caminhos para que você pare de repetir os mesmos movimentos dolorosos e comece a convidar o outro para um diálogo mais maduro, caso ele também esteja disponível.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section" id="beneficios">
+      <h2 class="section-title">Como esta aula pode mudar o seu dia a dia</h2>
+      <p class="section-subtitle">
+        Benefícios práticos que você pode começar a perceber ao aplicar o que aprender.
+      </p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-label">PARA AS CONVERSAS</div>
+          <div class="benefit-title">Menos discussões, mais diálogo</div>
+          <p class="benefit-text">
+            Entenda como abordar temas delicados sem acender, de cara, o gatilho de defesa, fuga ou ataque do outro.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-label">PARA O AFETO</div>
+          <div class="benefit-title">Reaproximação emocional</div>
+          <p class="benefit-text">
+            Aprenda a reconstruir gestos simples de carinho, atenção e presença que fazem o relacionamento voltar a respirar.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-label">PARA VOCÊ</div>
+          <div class="benefit-title">Mais clareza e limites</div>
+          <p class="benefit-text">
+            Descubra até onde vale insistir, o que esperar realisticamente e como se cuidar afetivamente nesse processo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O ESPECIALISTA -->
+    <section class="section" id="sobre">
+      <div class="about">
+        <div>
+          <h2 class="section-title">Sobre Vanderlei Azevedo</h2>
+          <p class="section-subtitle">
+            Psicoterapeuta com formação em Psicanálise Clínica, com atuação voltada para relacionamentos, casamento e bloqueios emocionais.
+          </p>
+
+          <p>
+            Ao longo da prática clínica, muitos atendimentos mostraram o mesmo cenário: casais que ainda se amam, mas já não conseguem se escutar, porque um ou ambos não sabem como sustentar o que sentem em palavras.
+          </p>
+          <p style="margin-top:8px;">
+            A partir dessas histórias, nasceu o <strong>Método Reconexão Emocional</strong>, uma forma clara e acessível de ajudar mulheres e casais a entenderem o que está por trás do silêncio, da frieza e das repetições que desgastam o vínculo.
+          </p>
+        </div>
+
+        <div class="about-photo">
+          <!-- SUBSTITUIR POR SUA FOTO: use uma <img> aqui, se preferir -->
+          <!-- Exemplo:
+          <img src="sua-foto.jpg" alt="Vanderlei Azevedo, psicoterapeuta" />
+          -->
+          <div class="about-photo-inner">
+            <div class="about-photo-label">PSICOTERAPEUTA • PSICANÁLISE CLÍNICA</div>
+            <div class="about-photo-name">Vanderlei Azevedo</div>
+            <div class="about-photo-tagline">
+              Acompanhando casais e indivíduos na reconstrução da escuta, da intimidade e do respeito mútuo.
+            </div>
+          </div>
+          <div class="about-photo-badge">
+            <span style="width:8px; height:8px; border-radius:999px; background:#f7f3ef;"></span>
+            Atuação focada em relacionamentos
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE VOCÊ VAI RECEBER -->
+    <section class="section" id="conteudo">
+      <h2 class="section-title">O que você recebe ao se inscrever</h2>
+      <p class="section-subtitle">
+        Todo o conteúdo fica disponível para você assistir no seu tempo, com acesso pela plataforma Hotmart.
+      </p>
+
+      <div class="what-card">
+        <div class="what-tag">CONTEÚDO PRINCIPAL</div>
+        <ul class="what-list">
+          <li>
+            <div class="what-icon">▶</div>
+            <span>Aula em vídeo de aproximadamente 40 minutos, com explicações claras, exemplos reais de consultório e orientações práticas.</span>
+          </li>
+          <li>
+            <div class="what-icon">💬</div>
+            <span>Ferramentas para reabrir o diálogo sem cair nas mesmas acusações e respostas defensivas de sempre.</span>
+          </li>
+          <li>
+            <div class="what-icon">❤️</div>
+            <span>Passos para reconstruir a conexão emocional quando ainda existe amor, mas o desgaste já é grande.</span>
+          </li>
+        </ul>
+
+        <div style="margin-top:14px; border-top:1px solid rgba(139,76,65,0.15); padding-top:10px;">
+          <div class="what-tag">BÔNUS INCLUSO</div>
+          <ul class="what-list">
+            <li>
+              <div class="what-icon">✍</div>
+              <span>E-book com perguntas e exercícios de reflexão para aplicar em até 7 dias, favorecendo conversas mais profundas e menos agressivas.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÔNUS / DESTAQUE -->
+    <section class="section" id="bonus">
+      <div class="bonus">
+        <div>
+          <div class="bonus-pill">BÔNUS EXCLUSIVO PARA ALUNOS</div>
+          <h2 class="bonus-title">“Perguntas que abrem o coração”</h2>
+          <p class="bonus-subtitle">
+            Um material de apoio para quem deseja transformar perguntas pesadas em convites reais à intimidade.
+          </p>
+          <p style="font-size:0.9rem;">
+            Em vez de “por que você nunca fala?” ou “você não se importa?”, aprenda a formular perguntas que ajudem o outro a se expressar sem se sentir atacado, diminuído ou cobrado como culpado.
+          </p>
+        </div>
+
+        <div class="bonus-card">
+          <p>
+            Você recebe um PDF prático com sugestões de perguntas, reflexões e frases de apoio para aplicar em diferentes momentos da relação — de conversas difíceis a pequenos gestos de reconexão no dia a dia.
+          </p>
+          <p style="margin-top:10px;">
+            O objetivo não é controlar o outro, mas abrir espaço para um encontro mais verdadeiro entre o que você sente e o que ele consegue, ou não, colocar em palavras.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTA / CHECKOUT -->
+    <section class="section" id="oferta">
+      <div class="offer">
+        <div class="offer-top">
+          <div>
+            <h2 class="offer-heading">Transforme o silêncio em diálogo consciente</h2>
+            <p class="offer-subheading">
+              Por um valor de entrada acessível, você tem acesso à aula completa, material de apoio e à possibilidade de enxergar o seu relacionamento com muito mais clareza.
+            </p>
+          </div>
+          <div class="offer-price-box">
+            <div class="offer-old-price">De R$ 297,00</div>
+            <div class="offer-price">
+              R$ 27,00 <small>à vista</small>
+            </div>
+            <div class="offer-note">
+              Pagamento único • Acesso imediato via Hotmart
+            </div>
+          </div>
+        </div>
+
+        <div class="offer-cta">
+          <!-- TROCAR HREF PELO LINK DO CHECKOUT HOTMART -->
+          <a href="https://seu-link-de-checkout-hotmart.com" class="button">
+            Quero acessar a aula agora
+          </a>
+          <div class="offer-secure">
+            <div class="offer-secure-dot"></div>
+            <span>Ambiente 100% seguro • Você pode pedir reembolso em até 7 dias se não fizer sentido para você.</span>
+          </div>
+        </div>
+
+        <!-- GARANTIA -->
+        <div class="guarantee">
+          <div>
+            <div class="guarantee-badge">
+              <span style="width:8px;height:8px;border-radius:999px;background:#8a3b3b;"></span>
+              Garantia de 7 dias
+            </div>
+            <h3 class="guarantee-title">Assista com calma, sem risco</h3>
+            <p class="guarantee-text">
+              Você pode assistir à aula, revisar o material e começar a aplicar as orientações no seu tempo. Se em até 7 dias sentir que o conteúdo não é para você, basta solicitar o reembolso direto pela Hotmart.
+            </p>
+          </div>
+          <div>
+            <p class="guarantee-text">
+              A proposta é oferecer acolhimento, clareza e caminhos possíveis — não promessas mágicas. Cada relacionamento é único, e nenhum terapeuta sério pode garantir resultados para todos os casos.
+            </p>
+            <p class="guarantee-text" style="margin-top:6px;">
+              Por isso, a garantia existe para que você possa experimentar o conteúdo com tranquilidade, respeitando também o seu limite e o seu tempo.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <div class="faq-item">
+            <div class="faq-question">Esta aula substitui terapia de casal?</div>
+            <div class="faq-answer">
+              Não. Ela é um recurso de psicoeducação e reflexão que pode ajudar muito na compreensão do vínculo e na forma de se comunicar, mas não substitui um processo psicoterapêutico individual ou de casal quando necessário.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Meu parceiro precisa assistir junto comigo?</div>
+            <div class="faq-answer">
+              Não é obrigatório. Muitas pessoas começam sozinhas, ganham clareza sobre o que está acontecendo e só depois convidam o parceiro, se perceberem abertura. A aula já é útil mesmo se apenas você assistir.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">E se o relacionamento já estiver muito desgastado?</div>
+            <div class="faq-answer">
+              A aula pode ajudar a diferenciar o que ainda é possível reconstruir do que já se tornou destrutivo demais. Em alguns casos, o melhor cuidado consigo mesmo é reconhecer limites e buscar outras formas de proteção emocional.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Por quanto tempo terei acesso?</div>
+            <div class="faq-answer">
+              O acesso é liberado pela Hotmart logo após a confirmação do pagamento, e você poderá assistir quantas vezes quiser dentro do período estabelecido na plataforma, informado na página de checkout.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div style="text-align:center; max-width:620px; margin:0 auto;">
+        <h2 class="section-title">Se ainda existe amor, vale olhar com mais cuidado</h2>
+        <p class="section-subtitle">
+          Dar um novo passo não é garantia de que tudo vai mudar da noite para o dia, mas continuar repetindo os mesmos movimentos têm mostrado aonde vocês chegam.
+        </p>
+        <!-- TROCAR HREF PELO LINK DO CHECKOUT HOTMART -->
+        <a href="https://seu-link-de-checkout-hotmart.com" class="button" style="margin-top:10px;">
+          Quero começar essa reconexão
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>
+        © <span id="ano-atual"></span> • Método Reconexão Emocional • Vanderlei Azevedo – Psicoterapeuta, Psicanálise Clínica.
+      </div>
+      <div class="footer-links">
+        <span>Este conteúdo tem caráter educativo e não substitui acompanhamento profissional individual.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Atualiza automaticamente o ano no rodapé
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
