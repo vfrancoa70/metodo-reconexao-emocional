@@ -14,8 +14,8 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f7f3ef;
-      color: #2b2520;
+      background: var(--bg-main);
+color: var(--text-main);
       line-height: 1.6;
     }
     img {
@@ -43,28 +43,28 @@
       font-size: 1.6rem;
       font-weight: 600;
       margin-bottom: 16px;
-      color: #251713;
+      color: var(--text-main);
     }
 
     .section-subtitle {
       font-size: 1rem;
-      color: #6b5c55;
+      color: var(--text-soft);
       margin-bottom: 12px;
     }
 
     /* CORES E ELEMENTOS BASE */
     :root {
-      --bg-main: #f7f3ef;
-      --bg-soft: #f0e4da;
-      --bg-dark: #2b2520;
-      --accent: #8a3b3b;      /* vinho queimado */
-      --accent-soft: #c78673; /* terracota suave */
-      --accent-deep: #215043; /* verde profundo */
-      --text-main: #2b2520;
-      --text-soft: #6b5c55;
-      --radius: 12px;
-      --shadow-soft: 0 18px 35px rgba(0, 0, 0, 0.08);
-    }
+  --bg-main: #f8fafc;
+  --bg-soft: #eef4fa;
+  --bg-dark: #243447;
+  --accent: #4a6fa5;
+  --accent-soft: #8fb3d9;
+  --accent-deep: #35588c;
+  --text-main: #243447;
+  --text-soft: #5b6b7a;
+  --radius: 12px;
+  --shadow-soft: 0 18px 35px rgba(53, 88, 140, 0.12);
+}
 
     .badge {
       display: inline-flex;
@@ -100,22 +100,22 @@
       gap: 8px;
       white-space: nowrap;
     }
-    .button {
-      background: linear-gradient(135deg, #8a3b3b, #c78673);
-      color: #fff;
-      box-shadow: 0 14px 25px rgba(138, 59, 59, 0.4);
-    }
+   .button {
+  background: linear-gradient(135deg, #4a6fa5, #35588c);
+  color: #fff;
+  box-shadow: 0 18px 30px rgba(53, 88, 140, 0.38);
+}
     .button:hover {
       transform: translateY(-1px);
-      box-shadow: 0 18px 30px rgba(138, 59, 59, 0.55);
+      box-shadow: 0 18px 30px rgba(53, 88, 140, 0.38);
     }
     .button-secondary {
       background: transparent;
-      color: #8a3b3b;
-      border: 1px solid rgba(138, 59, 59, 0.25);
+     color: #4a6fa5;
+border: 1px solid rgba(74, 111, 165, 0.25);
     }
     .button-secondary:hover {
-      background: rgba(138, 59, 59, 0.06);
+     background: rgba(74, 111, 165, 0.08);
     }
 
     .pill {
@@ -136,7 +136,7 @@
       gap: 32px;
       align-items: center;
       padding: 28px 24px;
-      background: linear-gradient(135deg, #f9f4f0 0%, #f1e2d6 40%, #f7f3ef 100%);
+      background: linear-gradient(135deg, #f8fbff 0%, #edf4fb 45%, #f8fafc 100%);
       border-radius: 24px;
       box-shadow: var(--shadow-soft);
       margin-top: 8px;
@@ -169,7 +169,7 @@
     }
 
     .hero-highlight {
-      color: #8a3b3b;
+      color: #4a6fa5;
       font-weight: 700;
     }
 
